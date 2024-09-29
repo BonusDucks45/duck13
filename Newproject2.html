@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'box1'>
+    <p id = 'text1'>I'm first</p>
+    <p id = 'text2'>I'm second</p>
+    <p id = 'text3'>I'm third</p>
+    <p id = 'text4'>I'm fourth</p>
+    </div>
+    <script>
+        // var removing = document.getElementById('text1');
+        // var removed = document.body.removeChild(removing);
+        // console.log(removed);
+    /*    var p = document.createElement('p');
+        beforeP = document.getElementById('text1');
+        p.append('Im adding text by method append');
+        p.id = 'before'
+        p.style.color = 'red'
+        // beforeP.after(p);
+        var box1 = document.getElementById('box1');
+        beforeP.replaceWith(p);*/
+         var pCollection = [];
+        box1 = document.getElementById('box1')
+        for ( var i = 0; i < 5; i++) {
+        pCollection.push(document.createElement('p'));
+        pCollection[i].textContent = 'New paragraph number ' + i;
+        pCollection[i].id = 'p' + i;
+        }
+        console.log(pCollection);
+        box1.prepend(...pCollection)
+        
+       /* var box1 = document.getElementById('box1');
+       box1.innerHTML = 'I deleted all paragraphs' */
+    </script>
+</body>
+</html>
