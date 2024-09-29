@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = 'box1'>
+    <p id = 'text1'>I'm first</p>
+    <p id = 'text2'>I'm second</p>
+    <p id = 'text3'>I'm third</p>
+    <p id = 'text4'>I'm fourth</p>
+    </div>
+    <script>
+     var box1 = document.getElementById('box1');
+     box1.innerHTML = 'I deleted all paragraphs' 
+    </script>
+</body>
+</html>
